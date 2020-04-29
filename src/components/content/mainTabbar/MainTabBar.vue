@@ -1,5 +1,5 @@
 <template>
-  <tab-bar>
+  <TabBar>
     <tab-bar-item path="/home">
       <img slot="item-icon" src="../../../assets/img/tabbar/home.png" alt="">
       <img slot="item-icon-active" src="../../../assets/img/tabbar/home_active.png" alt="">
@@ -15,17 +15,17 @@
       <img slot="item-icon-active" src="../../../assets/img/tabbar/shopcart_active.png" alt="">
       <div slot="item-text">购物车</div>
     </tab-bar-item>
-    <tab-bar-item path="/profile">
+    <TabBarItem path="/detail">
       <img slot="item-icon" src="../../../assets/img/tabbar/profile.png" alt="">
       <img slot="item-icon-active" src="../../../assets/img/tabbar/profile_active.png" alt="">
       <div slot="item-text">我的</div>
-    </tab-bar-item>
-  </tab-bar>
+    </TabBarItem>
+  </TabBar>
 </template>
 
 <script>
-  import TabBar from 'components/common/tabbar/TabBar'
-  import TabBarItem from 'components/common/tabbar/TabBarItem'
+  import TabBar from '../../common/tabbar/TabBar'
+  import TabBarItem from '../../common/tabbar/TabBarItem'
   export default {
     name: "MainTabBar",
     components: {
